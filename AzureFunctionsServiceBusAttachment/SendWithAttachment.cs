@@ -10,7 +10,7 @@ namespace AzureFunctionsServiceBusAttachment
     public static class SendWithAttachment
     {
         private static readonly string storageConnectionString = Environment.GetEnvironmentVariable("storageConnectionString");
-        private static readonly AzureStorageAttachmentConfiguration config = new AzureStorageAttachmentConfiguration(storageConnectionString);
+        private static readonly AzureStorageAttachmentConfiguration config = new AzureStorageAttachmentConfiguration(storageConnectionString).WithBlobSasUri();
 
         [FunctionName("SendWithAttachment")]
         [return: ServiceBus("myqueue", Connection = "ServiceBusConnection")]

@@ -5,13 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="3.3.0" />
-    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="3.0.0" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="ServiceBus.AttachmentPlugin">
-      <HintPath>..\..\ServiceBus.AttachmentPlugin\src\ServiceBus.AttachmentPlugin\bin\Debug\netstandard2.0\ServiceBus.AttachmentPlugin.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="3.0.3" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.26" />
+    <PackageReference Include="ServiceBus.AttachmentPlugin" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
